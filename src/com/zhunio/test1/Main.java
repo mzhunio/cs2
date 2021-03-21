@@ -20,7 +20,6 @@ public class Main {
         Z z3 = (Z) x3;
 
         question5();
-        question6();
     }
 
     public static void question5() {
