@@ -1,8 +1,11 @@
 package com.zhunio.test1;
 
 public class Animal {
+
     private int numOfLegs;
+
     private String type;
+
     private boolean wild;
 
     public Animal() {
@@ -24,9 +27,7 @@ public class Animal {
     }
 
     public boolean isWild() {
-        if (isWild())
-            return true;
-        return false;
+        return wild;
     }
 }
 
