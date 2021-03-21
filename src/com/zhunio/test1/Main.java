@@ -1,5 +1,8 @@
 package com.zhunio.test1;
 
+import java.net.CookieManager;
+import java.net.CookieStore;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -15,5 +18,17 @@ public class Main {
 //        Z z1 = new X();
 //        Z z2 = (Z) new Y();
         Z z3 = (Z) x3;
+
+        question5();
+    }
+
+    public static void question5() {
+        // a)
+        CookieManager manager = new CookieManager();
+        // b)
+        CookieStore store = manager.getCookieStore();
+        // c)
+//        import java.net.CookieManager;
+//        import java.net.CookieStore;
     }
 }
