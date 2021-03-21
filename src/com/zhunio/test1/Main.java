@@ -2,6 +2,8 @@ package com.zhunio.test1;
 
 import java.net.CookieManager;
 import java.net.CookieStore;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
 
@@ -20,6 +22,7 @@ public class Main {
         Z z3 = (Z) x3;
 
         question5();
+        question8();
     }
 
     public static void question5() {
@@ -31,4 +34,56 @@ public class Main {
 //        import java.net.CookieManager;
 //        import java.net.CookieStore;
     }
+
+    private static void question8() {
+        Doctor[] doctors = new Doctor[]{
+                new Student("Student1"),
+                new Student("Student2"),
+                new Student("Student3"),
+                new Student("Student4"),
+                new Student("Student5"),
+                new Student("Student6"),
+                new Student("Student7"),
+                new Student("Student8"),
+                new Student("Student9"),
+                new Student("Student10"),
+                new Family("Family1"),
+                new Family("Family2"),
+                new Family("Family3"),
+                new Family("Family4"),
+                new Family("Family5"),
+                new Family("Family6"),
+                new Family("Family7"),
+                new Family("Family8"),
+                new Family("Family9"),
+                new Family("Family10"),
+                new Surgeon("Surgeon1"),
+                new Surgeon("Surgeon2"),
+                new Surgeon("Surgeon3"),
+                new Surgeon("Surgeon4"),
+                new Surgeon("Surgeon5"),
+                new Surgeon("Surgeon6"),
+                new Surgeon("Surgeon7"),
+                new Surgeon("Surgeon8"),
+                new Surgeon("Surgeon9"),
+                new Surgeon("Surgeon10"),
+        };
+
+        var names = getStudentNames(doctors);
+        System.out.println(Arrays.toString(names));
+    }
+
+    private static String[] getStudentNames(Doctor[] doctors) {
+        ArrayList<String> names = new ArrayList<>();
+
+        for (Doctor doctor: doctors) {
+            if (doctor instanceof Student) {
+                Student student = (Student) doctor;
+                names.add(student.getName());
+            }
+        }
+
+        return names.toArray(new String[]{});
+    }
+
 }
