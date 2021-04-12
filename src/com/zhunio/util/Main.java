@@ -4,7 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
 //        addFront();
-        addLast();
+//        addLast();
+
+        Person p = new Person();
     }
 
     public static void addFront() {
