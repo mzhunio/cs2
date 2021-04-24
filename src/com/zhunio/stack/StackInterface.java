@@ -32,4 +32,5 @@ public interface StackInterface<T> {
      * Removes all entries from the stack.
      */
     void clear();
+
 }

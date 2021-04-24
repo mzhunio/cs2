@@ -2,7 +2,7 @@ package com.zhunio.stack;
 
 import java.util.LinkedList;
 
-public class Stack<T> implements StackInterface<T> {
+public class StackLinkedList<T> implements StackInterface<T> {
 
     private LinkedList<T> list = new LinkedList<>();
 
