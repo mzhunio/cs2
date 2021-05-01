@@ -12,7 +12,7 @@ public class Main {
         queue.enqueue("Joe");
         queue.dequeue();
         queue.dequeue();
-        
+
         System.out.println(queue.getFront());
         System.out.println(queue);
     }
