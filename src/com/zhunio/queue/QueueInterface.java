@@ -6,7 +6,7 @@ public interface QueueInterface<T> {
      * Adds a new entry to the back of the queue
      * @param newEntry is the new entry
      */
-    void enqueue(T newEntry); //none
+    void enqueue(T newEntry);
 
     /**
      * Removes and returns the entry at the front of the queue
@@ -31,5 +31,6 @@ public interface QueueInterface<T> {
     /**
      * Removes all entries from the queue
      */
-    void clear(); // none
+    void clear();
+
 }
